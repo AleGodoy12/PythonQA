@@ -136,3 +136,26 @@ def esVocal():
     else: print("La letra que elegiste NO es vocal")
 
 esVocal() """
+
+""" Escribí un programa que le solicite al usuario un número entero y muestre todos los números correlativos entre el 1 y el número ingresado por el usuario. """
+
+""" def hastaNumero():
+    numeros = int(input("Ingrese un número: "))
+    for x in range(1, numeros+1): #el +1 es para que aparezca el ultimo numero (el seleccionado)
+        print (x)
+hastaNumero() """
+
+
+""" Escribí un programa que muestre la sumatoria de todos los números entre el 0 y el 100. """
+
+""" def sumartodos():
+    num= 0
+    for x in range(101):
+        num = num + x 
+        print(num)
+sumartodos() """
+
+""" 
+Escribí un programa que, dado un número por el usuario, muestre todos sus divisores positivos. Recordá que un divisor es aquel que divide al número de forma exacta (con resto 0). """
+
+#no salió
