@@ -41,3 +41,4 @@ print(arreglo2.count("2022"))
 arreglo2.remove("Vladi")
 #elimina la primera coincidencia
 print(arreglo2)
+
