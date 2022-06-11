@@ -11,7 +11,6 @@ sumita = 2+3
 resta = 100 - 50
 multiplicacion = 4*5
 
-numero + numero5
 
 
 #Ejercicio 3
