@@ -4,10 +4,10 @@ listaLibros= list()
 #Objeto libro
 class Libro:
     def __init__(self):
-        titulo=""
-        autor=""
-        editorial=""
-        isbn=""
+        self.titulo=""
+        self.autor=""
+        self.editorial=""
+        self.isbn=""
 
 #Metodo agregar libro a la lista
 def agregarLibro():
@@ -43,13 +43,11 @@ def buscarLibro():
 
 #Metodo para eliminar el libro
 def eliminarLibro():
-    l=Libro()
-    libroEliminar=input("Ingrese el titulo del libro a eliminar")
-    for l in listaLibros:
-        if libroEliminar==l.titulo:
-            listaLibros.remove(libroEliminar);
-        else:
-            print("El libro no existe")  
+    libroIndice=int(input("Ingrese el indice del libro a eliminar "))
+    listaLibros.remove(listaLibros[libroIndice-1])
+    menuLibros()
+
+    
 
 #Menu del programa
 def menuLibros():
