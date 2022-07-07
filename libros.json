@@ -1,0 +1,29 @@
+[
+    {"nombre" : "Harry Potter y la piedra filosofal",
+    "autor":"J.K. Rowling",
+    "fecha_publicacion":"1997/02/01"},
+    
+    {"nombre": "Asi habló Zaratustra",
+    "autor":"Friederich Nietzche",
+    "fecha_publicacion":"1885/03/06"
+    },
+
+    {"nombre":"Asi habló Zaratustra",
+    "autor":"George Orwell",
+    "fecha_publicacion":"1949/05/10"},
+    
+    {"nombre":"Mi planta de naranja lima",
+    "autor":"Jose Mauro de Vasconcelos",
+    "fecha_publicacion":"1968/12/02"},
+    
+    {
+    "nombre":"El hombre mas rico de Babilonia",
+    "autor": "George Samuel Clason",
+    "fecha_publicacion":"1926/06/15"  
+    },
+    {
+    "nombre":"Humano, demasiado humano",
+    "autor":"Friederich Nietzche",
+    "fecha_publicacion":"1878/12/12"   
+    }
+]

@@ -1,6 +1,6 @@
+import coneccion
 
 
-global libross
 libross = ("id_lib","nombre_lib","autor_lib","fechaPub_lib")
 
 class Biblioteca:
@@ -8,6 +8,7 @@ class Biblioteca:
         pass        
     def presentacion(self,libreria_nom=""):
         self.libreria = libreria_nom = input("Nombre de la libreria? ")
+        print(f"Bienvenido a la libreria",libreria_nom)
         return libreria_nom
     
     def retorno_nombre(self, libreria_nom):
@@ -21,8 +22,12 @@ class Biblioteca:
         libross.append([nombre,autor,fecha]) #as fechaPub_lib como que se guarde ahi)
 
     def consultar_libro(self, id):
-        self.id = id
-        print(libross.id, libross.nombre)
+        cursor = conexion.cursor()
+        cursor.execute("SELECT * FROM libros") #ejecuta la consulta sql
+        resultados = cursor.fetchall()
+        for filas in resultados:
+            print(filas[0],filas[1],filas[2],filas[3])
+        
 
     def quitar_libro(self, id):
         libross.pop(id)        
@@ -37,7 +42,7 @@ class Biblioteca:
                 Biblioteca.agregar_libro
             elif eleccion=="3":
                 #llamar a los libros 
-                print(libross.id,"-",libross.nombre, "-", libross.autor, "-",libross.fechaPub)
+                print(libross.nombre, "-", libross.autor, "-",libross.fechaPub)
             elif eleccion=="4":
                 #sacar por id o nombre de la biblioteca, que formato ??
                 Biblioteca.quitar_libro
@@ -50,7 +55,8 @@ class Biblioteca:
         self.nombre_libro = nombre_lib
         self.autor_lib = autor_lib
         self.fechaPub = fechaPub_lib """
-    
+
+        
 biblioteca = Biblioteca()
 biblioteca.presentacion()
 
